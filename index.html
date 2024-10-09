@@ -46,7 +46,12 @@
             </svg>
         </a>
         <div href="" class="header__call-back">
-            <div class="header__call-back__number">+7 495 543-66-70</div>
+            <div class="header__call-back__number">
+                <svg class="header-call-back-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5317 12.4725C15.5208 16.4605 16.4258 11.8468 18.9656 14.3849C21.4143 16.8329 22.8216 17.3233 19.7192 20.4248C19.3306 20.7371 16.8616 24.4944 8.1846 15.8198C-0.493478 7.14412 3.26158 4.67257 3.57397 4.28407C6.68387 1.17397 7.16586 2.5895 9.61449 5.03745C12.1544 7.57662 7.54266 8.48454 11.5317 12.4725Z" stroke="#7E81E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                +7 495 543-66-70
+            </div>
             <a href="#" class="header__call-back__button">Обратный звонок</a>
         </div>
         <div class="header__menu mob">
@@ -194,14 +199,14 @@
                 <div class="how-work__heading">Как мы работаем</div>
                 <div class="how-work__description">
                     <div class="how-work__description__item">
-                        <div class="how-work__description__item__title calc">Проектные работы по оценке</div>
+                        <div class="how-work__description__item__title calc"> <img src="./assets/images/how-work/calc.png" alt="" class="how-work__description__item__title-img"> Проектные работы по оценке</div>
                         <div class="how-work__description__item__text">
                             На старте мы оцениваем проект в часах и называем
                             итоговую стоимость работ. При этом стоимость зависит от вида услуг
                         </div>
                     </div>
                     <div class="how-work__description__item">
-                        <div class="how-work__description__item__title time">Покупка часов</div>
+                        <div class="how-work__description__item__title time"> <img src="./assets/images/how-work/time.png" alt="" class="how-work__description__item__title-img">Покупка часов</div>
                         <div class="how-work__description__item__text">
                             Мы выделяем необходимых специалистов под ваш проект и
                             к оплате идет фактически потраченное ими время
@@ -325,7 +330,67 @@
             </div>
         </section>
 
-        <!-- <section class="projects"></section> -->
+        <section class="projects">
+            <div class="container">
+                <div class="section-heading">
+                    <h3 class="section-headin_heading">Наши проекты</h3>
+                    <p class="section-heading_text">Мы любим работать с теми, кто хочет быть первыми</p>
+                </div>
+                <div class="swiper keyses-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide keyses-slide">
+                        <img src="./assets/images/keyses/1.png" alt="" class="keyses-slide-img">
+                        <div class="keyses-slide-info">
+                            <p class="keyses-slide-info__heading">Гипсовые лифтинг-маски</p>
+                            <p class="keyses-slide-info__text">Branding, Web Design 2024</p>
+                            <div class="keyses-slide-items">
+                                <div class="keyses-slide-item">Web design</div>
+                                <div class="keyses-slide-item">elementor pro</div>
+                                <div class="keyses-slide-item">UX/UI</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide keyses-slide">
+                        <img src="./assets/images/keyses/2.png" alt="" class="keyses-slide-img">
+                        <div class="keyses-slide-info">
+                            <p class="keyses-slide-info__heading">Гипсовые лифтинг-маски</p>
+                            <p class="keyses-slide-info__text">Branding, Web Design 2024</p>
+                            <div class="keyses-slide-items">
+                                <div class="keyses-slide-item">Web design</div>
+                                <div class="keyses-slide-item">elementor pro</div>
+                                <div class="keyses-slide-item">UX/UI</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide keyses-slide">
+                        <img src="./assets/images/keyses/3.png" alt="" class="keyses-slide-img">
+                        <div class="keyses-slide-info">
+                            <p class="keyses-slide-info__heading">Гипсовые лифтинг-маски</p>
+                            <p class="keyses-slide-info__text">Branding, Web Design 2024</p>
+                            <div class="keyses-slide-items">
+                                <div class="keyses-slide-item">Web design</div>
+                                <div class="keyses-slide-item">elementor pro</div>
+                                <div class="keyses-slide-item">UX/UI</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide keyses-slide">
+                        <img src="./assets/images/keyses/1.png" alt="" class="keyses-slide-img">
+                        <div class="keyses-slide-info">
+                            <p class="keyses-slide-info__heading">Гипсовые лифтинг-маски</p>
+                            <p class="keyses-slide-info__text">Branding, Web Design 2024</p>
+                            <div class="keyses-slide-items">
+                                <div class="keyses-slide-item">Web design</div>
+                                <div class="keyses-slide-item">elementor pro</div>
+                                <div class="keyses-slide-item">UX/UI</div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="keyses-swiper-pagination"></div>
+            </div>
+        </section>
 
         <section class="comp-promotion">
             <div class="container">
@@ -733,19 +798,32 @@
                             <div class="questions-left__left-column__form__radio-buttons__call">
                                 <input type="radio" class="questions-left__left-column__form__radio-input"
                                     name="radio-input" id="Call" checked>
-                                <label class="questions-left__left-column__form__radio-label" for="Call">Звонок</label>
+                                <label class="questions-left__left-column__form__radio-label" for="Call">
+                                    <div class="questions-left__left-column__form__radio-label-visual">
+
+                                    </div>
+                                    <p class="question-left-label-text">Звонок</p>
+                                    </label>
                             </div>
                             <div class="questions-left__left-column__form__radio-buttons__whatsapp">
                                 <input type="radio" class="questions-left__left-column__form__radio-input"
                                     name="radio-input" id="WhatsApp">
                                 <label class="questions-left__left-column__form__radio-label"
-                                    for="WhatsApp">Ваттсап</label>
+                                    for="WhatsApp">
+                                    <div class="questions-left__left-column__form__radio-label-visual">
+
+                                    </div>
+                                    <p class="question-left-label-text">Ваттсап</p></label>
                             </div>
                             <div class="questions-left__left-column__form__radio-buttons__telegram">
                                 <input type="radio" class="questions-left__left-column__form__radio-input"
                                     name="radio-input" id="Telegram">
                                 <label class="questions-left__left-column__form__radio-label"
-                                    for="Telegram">Телеграм</label>
+                                    for="Telegram">
+                                    <div class="questions-left__left-column__form__radio-label-visual">
+
+                                    </div>
+                                    <p class="question-left-label-text">Телеграм</p></label>
                             </div>
                         </div>
                         <button class="questions-left__left-column__form__confirm">Оставить заявку</button>

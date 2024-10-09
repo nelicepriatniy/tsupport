@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Inter";
-  src: url("/assets/fonts/Inter.ttf");
+  src: url(".././assets/fonts/Inter.ttf");
 }
 @font-face {
   font-family: "Geometria";
-  src: url("/assets/fonts/Geometria.ttf");
+  src: url(".././assets/fonts/Geometria.ttf");
 }
 * {
   margin: 0;
@@ -13,6 +13,7 @@
   text-decoration: none;
   border: none;
   outline: none;
+  font-family: "Inter", "sans-serif";
 }
 
 body,
@@ -86,10 +87,9 @@ html {
   display: flex;
   align-items: center;
 }
-.header__call-back__number::before {
+.header__call-back__number .header-call-back-svg {
   content: "";
   display: block;
-  background: url("/assets/icons/header-phone.svg") no-repeat;
   width: 24rem;
   height: 24rem;
   margin-right: 5rem;
@@ -166,7 +166,7 @@ html {
   width: 24rem;
   height: 24rem;
   margin-right: 8rem;
-  background: url("/assets/images/footer/call.png") no-repeat;
+  background: url(".././assets/images/footer/call.png") no-repeat;
   background-size: cover;
 }
 
@@ -246,7 +246,7 @@ html {
 .description__buttons__download::before {
   content: "";
   display: block;
-  background: url("/assets/icons/download.svg") no-repeat;
+  background: url(".././assets/icons/download.svg") no-repeat;
   width: 24rem;
   height: 24rem;
   margin-right: 9rem;
@@ -301,7 +301,9 @@ html {
   width: 100%;
 }
 .trust-us__scroll img {
-  height: 100rem;
+  max-height: 100rem;
+  max-width: 122rem;
+  flex-shrink: 0;
 }
 
 .services__heading {
@@ -466,7 +468,7 @@ html {
   position: absolute;
   top: 40rem;
   left: 455rem;
-  background: url("/assets/icons/how-works/arrow.svg");
+  background: url(".././assets/icons/how-works/arrow.svg");
   width: 60rem;
   height: 97rem;
 }
@@ -486,7 +488,7 @@ html {
   font-weight: 700;
   font-size: 24rem;
 }
-.how-work__description__item__title::before {
+.how-work__description__item__title .how-work__description__item__title-img {
   content: "";
   display: block;
   width: 41rem;
@@ -494,11 +496,11 @@ html {
 }
 
 .time::before {
-  background: url("/assets/images/how-work/time.png") no-repeat;
+  background: url(".././assets/images/how-work/time.png") no-repeat;
 }
 
 .calc::before {
-  background: url("/assets/images/how-work/calc.png") no-repeat;
+  background: url(".././assets/images/how-work/calc.png") no-repeat;
 }
 
 .calc::before,
@@ -603,7 +605,7 @@ html {
   top: -25rem;
   width: 20rem;
   height: 35rem;
-  background: url("/assets/icons/acquaintance/pin.svg");
+  background: url(".././assets/icons/acquaintance/pin.svg");
 }
 .acquaintance__swiper .swiper-wrapper .acquaintance__list__item:nth-child(2n)::before {
   transform: rotateY(180deg);
@@ -1068,30 +1070,42 @@ html {
 }
 
 .questions-left__left-column__form__radio-label {
+  gap: 10px;
   display: flex;
   align-items: center;
   position: relative;
-  padding-left: 30rem;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   cursor: pointer;
+  border-radius: 50%;
 }
 
-.questions-left__left-column__form__radio-label:before {
+.questions-left__left-column__form__radio-label .questions-left__left-column__form__radio-label-visual:before {
   content: "";
   display: block;
-  position: absolute;
-  left: 0;
   width: 24rem;
   height: 24rem;
-  background: url("/assets/icons/questions-left/checkbox/unchecked.svg") no-repeat;
   background-size: cover;
-  transition: all 0.1s ease;
+  transition: all 0.4s ease;
 }
 
-.questions-left__left-column__form__radio-input:checked + .questions-left__left-column__form__radio-label:before {
-  background: url("/assets/icons/questions-left/checkbox/checked.svg") no-repeat;
+.questions-left__left-column__form__radio-label-visual {
+  border: 1rem solid #dfe0ff;
+  width: 26rem;
+  height: 26rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.questions-left__left-column__form__radio-input:checked + .questions-left__left-column__form__radio-label .questions-left__left-column__form__radio-label-visual:before {
+  border-radius: 1000rem;
+  width: 10rem;
+  height: 10rem;
+  background: #7174d9;
   background-size: cover;
 }
 
@@ -1150,17 +1164,17 @@ html {
 }
 
 .phone::before {
-  background: url("/assets/images/questions-left/call.png") no-repeat;
+  background: url(".././assets/images/questions-left/call.png") no-repeat;
   background-size: cover;
 }
 
 .email::before {
-  background: url("/assets/images/questions-left/email.png") no-repeat;
+  background: url(".././assets/images/questions-left/email.png") no-repeat;
   background-size: cover;
 }
 
 .address::before {
-  background: url("/assets/images/questions-left/address.png") no-repeat;
+  background: url(".././assets/images/questions-left/address.png") no-repeat;
   background-size: cover;
 }
 
@@ -1240,17 +1254,17 @@ html {
 }
 
 .phone1::before {
-  background: url("/assets/images/footer/call.png") no-repeat;
+  background: url(".././assets/images/footer/call.png") no-repeat;
   background-size: cover;
 }
 
 .email1::before {
-  background: url("/assets/images/footer/email.png") no-repeat;
+  background: url(".././assets/images/footer/email.png") no-repeat;
   background-size: cover;
 }
 
 .address1::before {
-  background: url("/assets/images/footer/address.png") no-repeat;
+  background: url(".././assets/images/footer/address.png") no-repeat;
   background-size: cover;
 }
 
@@ -1270,6 +1284,105 @@ html {
   text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
+}
+
+.projects {
+  background: #a2a2fc;
+  padding: 80rem 0;
+  margin-top: 80rem;
+}
+.projects .section-heading {
+  margin-bottom: 50rem;
+  width: 100%;
+}
+.projects .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+}
+
+.section-headin_heading {
+  font-family: "Geometria", sans-serif;
+  font-weight: 700;
+  font-size: 48rem;
+  color: white;
+  margin-bottom: 10rem;
+}
+
+.section-heading_text {
+  font-weight: 500;
+  font-size: 20rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.keyses-swiper {
+  max-width: 100%;
+}
+.keyses-swiper .swiper-wrapper {
+  height: 100% !important;
+}
+
+.keyses-slide-img {
+  width: 100%;
+  margin-bottom: 30rem;
+  border-radius: 15rem;
+  overflow: hidden;
+}
+
+.keyses-slide-info__heading {
+  font-weight: 700;
+  font-size: 20rem;
+  line-height: 120%;
+  color: white;
+  font-family: "Geometria", sans-serif;
+  margin-bottom: 7rem;
+}
+
+.keyses-slide-info__text {
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 150%;
+  color: white;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 20rem;
+}
+
+.keyses-slide-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+.keyses-slide-item {
+  background: #a4e2a3;
+  padding: 1rem 14rem;
+  font-weight: 500;
+  font-size: 14rem;
+  line-height: 214%;
+  text-align: center;
+  color: white;
+  font-family: "Inter", sans-serif;
+  border-radius: 100rem;
+}
+
+.keyses-swiper-pagination {
+  margin-top: 80rem;
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+}
+.keyses-swiper-pagination .swiper-pagination-bullet {
+  border-radius: 50000rem;
+  width: 80rem;
+  height: 3rem;
+  background: #dfe0ff;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+.keyses-swiper-pagination .swiper-pagination-bullet-active {
+  background: #a4e2a3;
 }
 
 @media screen and (max-width: 1279px) {
@@ -1550,5 +1663,43 @@ html {
   }
   .footer__policy {
     margin-top: 40rem;
+  }
+  .projects {
+    padding: 30rem 0;
+  }
+  .projects .section-heading {
+    margin-bottom: 30;
+  }
+  .section-headin_heading {
+    font-size: 28rem;
+    margin-bottom: 11rem;
+  }
+  .section-heading_text {
+    font-size: 18rem;
+  }
+  .keyses-slide-info__heading {
+    font-size: 18rem;
+    line-height: 133%;
+    margin-bottom: 7rem;
+  }
+  .keyses-slide-info__text {
+    font-size: 15rem;
+    line-height: 160%;
+    margin-bottom: 20rem;
+  }
+  .keyses-slide-item {
+    font-size: 14rem;
+    line-height: 214%;
+  }
+  .keyses-swiper-pagination {
+    margin-top: 40rem;
+    gap: 12rem;
+  }
+  .questions-left__left-column__form__radio-label-visual {
+    width: 26rem;
+    height: 26rem;
+  }
+  .questions-left__left-column__form__radio-label {
+    gap: 10rem;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,9 @@
 "use strict";
 
+var _ref;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var headerMenuButtonOpen = document.querySelector(".header__menu-button");
 var headerMenuButtonClose = document.querySelector(".header__menu__close-button");
 
@@ -81,3 +85,17 @@ var acquaintanceSwiper = new Swiper(".acquaintance__swiper", {
     clickable: true
   }
 });
+var keysesSlider = new Swiper('.keyses-swiper', (_ref = {
+  speed: 400,
+  spaceBetween: 100,
+  slidesPerView: 3
+}, _defineProperty(_ref, "spaceBetween", 30), _defineProperty(_ref, "pagination", {
+  el: '.keyses-swiper-pagination'
+}), _defineProperty(_ref, "breakpoints", {
+  375: {
+    slidesPerView: 1
+  },
+  1279: {
+    slidesPerView: 3
+  }
+}), _ref));

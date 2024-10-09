@@ -79,3 +79,23 @@ const acquaintanceSwiper = new Swiper(".acquaintance__swiper", {
     clickable: true,
   },
 });
+
+
+
+const keysesSlider = new Swiper('.keyses-swiper', {
+  speed: 400,
+  spaceBetween: 100,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: '.keyses-swiper-pagination'
+  },
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+    },
+    1279: {
+      slidesPerView: 3,
+    },
+  },
+});
