@@ -988,7 +988,7 @@ html {
   display: none;
 }
 .questions-left__left-column__form__radio-label {
-  gap: 10px;
+  gap: 10rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -1281,6 +1281,31 @@ html {
   }
   .swiper-pagination-bullet-active {
     background: #a4e2a3;
+  }
+}
+
+.header__nav__item {
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0rem;
+    background: #7174D9;
+    position: absolute;
+    bottom: -47rem;
+    left: 0;
+    transition: all .4s ease;
+  }
+  &:hover {
+    & a {
+      color: #7174D9;
+      transition: all .4s ease;
+    }
+    &::after {
+      height: 5rem;
+
+    }
   }
 }
 
